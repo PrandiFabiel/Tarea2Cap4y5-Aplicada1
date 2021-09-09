@@ -1,0 +1,43 @@
+﻿<Window x:Class="Tarea2_Teoria.UI.Ejercicio5Cap4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tarea2_Teoria.UI"
+        mc:Ignorable="d"
+        Title="Ejercicio2Cap4" Height="300" Width="460">
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="20">
+                <Label Content="Programa que calcule el promedio de edad de un grupo de personas."/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                <Label Content="Edad1" Margin="20,0,0,0"/>
+                <TextBox x:Name="Ejercicio5Cap4TextBoxEdad1" Width="100" Height="20" Margin="32,0,0,0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                <Label Content="Edad2" Margin="20,0,0,0"/>
+                <TextBox x:Name="Ejercicio5Cap4TextBoxEdad2" Width="100" Height="20" Margin="32,0,0,0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                <Label Content="Edad3" Margin="20,0,0,0"/>
+                <TextBox x:Name="Ejercicio5Cap4TextBoxEdad3" Width="100" Height="20" Margin="32,0,0,0"/>
+            </StackPanel>
+
+
+            <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                <Label Content="Promedio" Margin="20,0,0,0"/>
+                <TextBox x:Name="Ejercicio5Cap4TextBoxPromedio" Width="100" Height="20" IsEnabled="False" Margin="12,0,0,0"/>
+            </StackPanel>
+            
+            <!--Boton-->
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="PromedioButton" Content="Calcular" Height="20" Width="80" Margin="35,10,20,0" Click="PromedioButton_Click"/>
+                <Button x:Name="LimpiarButton" Content="Limpiar" Height="20" Width="80" Margin="20,10,0,0" Click="LimpiarButton_Click"/>
+            </StackPanel>
+
+        </StackPanel>
+    </Grid>
+</Window>
